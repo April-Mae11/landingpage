@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSphere - Animated Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="logo">TechSphere</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to <span>TechSphere</span></h2>
+    <p>Innovating digital solutions for the modern world</p>
+    <button onclick="scrollToSection('about')">Explore More</button>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a creative tech team specializing in modern and efficient web systems, bringing your ideas to life through clean, functional designs.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <h3>Web Development</h3>
+      <p>Building responsive, high-performance websites tailored to your brand and goals.</p>
+    </div>
+    <div class="service-box">
+      <h3>System Design</h3>
+      <p>Designing structured, efficient systems to streamline your workflow and enhance productivity.</p>
+    </div>
+    <div class="service-box">
+      <h3>Database Integration</h3>
+      <p>Secure and optimized database systems that keep your data safe and accessible.</p>
+    </div>
+
+    <div class="contact-info">
+      <h2>Want to work with us?</h2>
+      <p>Get in touch and let’s start building something amazing together.</p>
+      <button onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Send us a message and we’ll get back to you soon!</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="mockup-msg">*This is a mockup form — no data will be sent.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 TechSphere. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #0a0a0a;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 255, 204, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.1rem;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, rgba(0,255,204,0.3), #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero h2 span {
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background: transparent;
+  border: 2px solid #00ffcc;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+button:hover {
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+/* Sections */
+section {
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00ffcc;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ddd;
+}
+
+.services {
+  background: rgba(0,255,204,0.05);
+}
+
+.service-box {
+  margin: 30px auto;
+  max-width: 700px;
+  background: rgba(0,255,204,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+  transition: text-shadow 0.3s;
+}
+
+.service-box h3:hover {
+  text-shadow: 0 0 20px #00ffcc;
+}
+
+.service-box p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.contact-info {
+  margin-top: 60px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input, textarea {
+  width: 70%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid rgba(0,255,204,0.3);
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+}
+
+.mockup-msg {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 255, 204, 0.1);
+  font-size: 1.1rem;
+}
